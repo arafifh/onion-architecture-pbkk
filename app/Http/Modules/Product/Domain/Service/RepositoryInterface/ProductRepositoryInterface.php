@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Product\Domain\Service\RepositoryInterface;
+namespace App\Http\Modules\Product\Domain\Service\RepositoryInterface;
 
 use App\Http\Product\Domain\Models\Product;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Product\Domain\Models;
+namespace App\Http\Modules\Product\Domain\Models;
 
-use App\Http\Product\Domain\Enum\StatusProduct;
+use App\Http\Modules\Product\Domain\Enum\StatusProduct;
 
 class Product
 {

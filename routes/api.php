@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// Change the route file to Modules
+foreach (scandir($path = app_path('Http/Modules')) as $dir) {
+    if (file_exists($filepath = "{$path}/{$dir}/Presentation/api.php")) {
+        require $filepath;
+    }
+}

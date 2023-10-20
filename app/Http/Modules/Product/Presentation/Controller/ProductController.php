@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Product\Presentation\Controller;
+namespace App\Http\Modules\Product\Presentation\Controller;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Product\Domain\Enum\StatusProduct;
-use App\Http\Product\Application\Service\CreateProduct\CreateProductRequest;
-use App\Http\Product\Application\Service\CreateProduct\CreateProductService;
+use App\Http\Modules\Product\Domain\Enum\StatusProduct;
+use App\Http\Modules\Product\Application\Service\CreateProduct\CreateProductRequest;
+use App\Http\Modules\Product\Application\Service\CreateProduct\CreateProductService;
 
 class ProductController extends Controller {
     public function __construct(

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Product\Application\Service\CreateProduct;
+namespace App\Http\Modules\Product\Application\Service\CreateProduct;
 
-use App\Http\Product\Domain\Models\Product;
-use App\Http\Product\Application\Service\CreateProduct\CreateProductRequest;
-use App\Http\Product\Domain\Service\RepositoryInterface\ProductRepositoryInterface;
+use App\Http\Modules\Product\Domain\Models\Product;
+use App\Http\Modules\Product\Application\Service\CreateProduct\CreateProductRequest;
+use App\Http\Modules\Product\Domain\Service\RepositoryInterface\ProductRepositoryInterface;
 
 class CreateProductService {
     public function __construct(

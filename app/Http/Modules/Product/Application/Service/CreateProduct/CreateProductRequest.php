@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Product\Application\Service\CreateProduct;
+namespace App\Http\Modules\Product\Application\Service\CreateProduct;
 
-use App\Http\Product\Domain\Enum\StatusProduct;
+use App\Http\Modules\Product\Domain\Enum\StatusProduct;
 
 class CreateProductRequest {
     public function __construct(

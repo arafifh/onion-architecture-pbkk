@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Product\Domain\Enum;
+namespace App\Http\Modules\Product\Domain\Enum;
 
 enum StatusProduct : string
 {
