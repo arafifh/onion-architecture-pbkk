@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Controller extends BaseController
 {
@@ -33,10 +34,20 @@ class Controller extends BaseController
         ];
     }
 
-    public function successWithData($data){
-        return [
-            'success' => true,
-            'data' => $data
-        ];
+    public function success(): JsonResponse {
+        return response()->json(
+            [
+                'success' => true
+            ]
+        );
+    }
+
+    public function successWithData($data): JsonResponse {
+        return response()->json(
+            [
+                'success' => true,
+                'data' => $data
+            ]
+        );
     }
 }
